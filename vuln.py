@@ -1,5 +1,4 @@
-# trigger new run
-import os
+import subprocess
 
 user_input = input("Enter a command: ")
-os.system("sh -c " + user_input)
+subprocess.Popen(user_input, shell=True)
